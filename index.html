@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Welcome to My Site</div>
+            <ul class="link-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <ul class="mobile-links">
+                <div class="menu-btn" onclick="display()"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu invisible">
+                    <ul>
+                        <li><a onclick="display()" href="#">Home</a></li>
+                        <li><a onclick="display()" href="#services">services</a></li>
+                        <li><a onclick="display()" href="#">Projects</a></li>
+                        <li><a onclick="display()" href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+        <div class="image-name-container">
+            <img class="my-img" src="images/profile.png" alt="personal photo">
+            <div class="title-name">
+                <h2>Mahmoud Mohammed Fathallah</h2>
+                <h2>Full-stack web developer</h2>
+            </div>
+        </div>
+    </header>
+    <div class="main-section">
+        <div id="services" class="services">
+            <h1>Services:-</h1>
+            <div class="skills">
+                <div class="skill-row">
+                    <img src="images/web design.jpg" alt="web design">
+                    <div class="description">
+                        <h2>Web design</h2>
+                        <p>I can design your cool website that is both beautiful and attractive.</p>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <img src="images/web-development.jpg" alt="web design">
+                    <div class="description">
+                        <h2>Web development</h2>
+                        <p>I can develop your website using latest technologies in web development field.</p>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <img src="images/responsive.jpg" alt="responsive">
+                    <div class="description">
+                        <h2>Responsive design</h2>
+                        <p>I can make your customized responsive website that looks beautiful on compuers and also on
+                            mobile phones</p>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <img src="images/question-mark-1829459_1920.png" alt="question mark">
+                    <div class="description">
+                        <h2>Why are you waiting?</h2>
+                        <p>You can ask for my services by contacting me in the contact section, hurry up!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects section -->
+        <div id="projects" class="projects">
+            <a class="btn-move-left" onclick="move('left')"><i class="fa-solid fa-angle-left"></i></a>
+            <div class="pro-div num1 active">
+                <h1>Project 1:</h1>
+                <img src="images/calculator.jpg" alt="calculator">
+                <div class="pro-description">
+                    <h2>Web based simple calculator</h2>
+                    <p>A simple web application for a calculaor developed in angular front-end framework and java spring
+                        boot
+                        as a back-end framework. this was developed as an assignment for college.</p>
+                </div>
+            </div>
+            <div class="pro-div num2 invisible">
+                <h1>Project 2:</h1>
+                <img src="images/e-mail.jpg" alt="E-mail">
+                <div class="pro-description">
+                    <h2>Emailing system web application</h2>
+                    <p>A simple web application for a local mail system developed in angular front-end framework and
+                        java spring boot
+                        as a back-end framework. this was developed as an assignment for college.</p>
+                </div>
+            </div>
+            <div class="pro-div num3 invisible">
+                <h1>Project 3:</h1>
+                <img src="images/shapes.jpg" alt="shapes">
+                <div class="pro-description">
+                    <h2>Web based shapes drawing application</h2>
+                    <p>A simple web application for drawing shapes developed in angular front-end framework and java
+                        spring boot
+                        as a back-end framework. this was developed as an assignment for college.</p>
+                </div>
+            </div>
+            <a class="btn-move-right" onclick="move('right')"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact me</h1>
+            <h2>If you are intersted in my services, hurry up, don't wait, and feel free to send an E-mail</h2>
+            <a href="mailto:mahmoudmfathallah1@gmail.com">Click to send</a>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github fa-2xl"></i></a></li>
+        </ul>
+        <p>© 2022 Mahmoud Fathallah.</p>
+    </footer>
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>
