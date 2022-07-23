@@ -108,6 +108,7 @@ a {
 .skill-row img {
     height: 150px;
     width: 150px;
+    border-radius: 20px;
 }
 
 .skill-row .description {
