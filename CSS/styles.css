@@ -223,11 +223,11 @@ footer ul li {
         text-align: left;
         line-height: 3;
         background-color: var(--secondary);
-        width: 100%;
+        width: 150px;
     }
 
     .menu-btn {
-        width: 100%;
+        width: 40%;
         padding: 10px;
         font-size: 1rem;
         background-color: var(--secondary);
