@@ -234,12 +234,15 @@ footer ul li {
         border: none;
         color: var(--white);
     }
-
+    
+    .title-name {
+        font-size: 1rem;
+    }
     /* services section */
     .skills {
         display: grid;
         grid-template-columns: 100%;
-        padding: 100px 0;
+        padding: 0 0;
 
     }
 
@@ -256,4 +259,13 @@ footer ul li {
     .contact {
         padding: 12% 0;
     }
+    .contact h2 {
+        margin: 50 0;
+    }
+    /*projects section*/
+    .pro-description {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    
 }
