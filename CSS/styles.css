@@ -184,6 +184,10 @@ a {
     border-radius: 20px;
 }
 
+.contact a:hover {
+   background-color: #3b6ac9;
+}
+
 /* Footer section */
 footer {
     background-color: var(--primary);
