@@ -235,6 +235,10 @@ footer ul li {
         color: var(--white);
     }
     
+    .image-name-container {
+        flex-direction: column;
+    }
+    
     .title-name {
         font-size: 1rem;
     }
@@ -266,6 +270,11 @@ footer ul li {
     .pro-description {
         padding: 0;
         font-size: 1.2rem;
+    }
+    
+    /*footer section*/
+    footer {
+        padding: 60px 0;
     }
     
 }
