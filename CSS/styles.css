@@ -138,7 +138,7 @@ a {
     height: calc(100% - 141px);
 }
 .title-name:hover {
-    transform: rotate(40deg);
+    transform: rotate(20deg);
 }
 
 .title-name {
@@ -149,11 +149,11 @@ a {
 }
 
 @keyframes rotation {
-    0%{transform: rotate(0);}
-    25%{transform: rotate(20deg);}
-    50%{transform: rotate(0deg);}
-    75%{transform: rotate(-20deg);}
-    100%{transform: rotate(0deg);}
+    0%{transform: rotate(0) translateX(0);}
+    25%{transform: rotate(20deg) translateX(15%);}
+    50%{transform: rotate(0deg) translateX(0);}
+    75%{transform: rotate(-20deg) translateX(-15%);}
+    100%{transform: rotate(0deg) translateX(0);}
 }
 
 .my-img-container {
@@ -297,9 +297,7 @@ a {
     padding-top: 100px;
     padding-bottom: 150px;
     font-family: 'Kanit';
-    background:url('../images/prooo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:linear-gradient(0deg, black 50%, #85027a 20%);
 }
 
 .procject-section .heading {
@@ -591,8 +589,7 @@ footer ul li {
     
     /*projects section*/
     .projects{
-        width: 100%;
-        border-radius: 0;
+        width: 95%;
     }
     .pro-description {
         padding: 0 30px;
