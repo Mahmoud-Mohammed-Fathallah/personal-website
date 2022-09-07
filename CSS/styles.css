@@ -591,7 +591,8 @@ footer ul li {
     
     /*projects section*/
     .projects{
-        width: 90%;
+        width: 100%;
+        border-radius: 0;
     }
     .pro-description {
         padding: 0 30px;
