@@ -116,13 +116,13 @@ a {
     font-size: 2.6rem;
     font-weight: bolder;
     margin: auto;
-    color: rgb(145, 145, 252);
+    color: white;
     cursor: pointer;
-    animation: rotation 3s linear infinite;
+    animation: rotation 10s linear infinite;
     transition: .5s;
 }
 .logo:hover{
-    color: white;
+    color: rgb(145, 145, 252);
     font-size: 3rem;
 }
 
@@ -149,13 +149,10 @@ a {
 }
 
 @keyframes rotation {
-    0%{transform: rotate(0) translateX(0);}
-    25%{transform: rotate(20deg) translateX(15%);}
-    50%{transform: rotate(0deg) translateX(0);}
-    75%{transform: rotate(-20deg) translateX(-15%);}
-    100%{transform: rotate(0deg) translateX(0);}
+    0%{transform: rotateY(0deg);}
+    50%{transform: rotateY(180deg);}
+    100%{transform: rotateY(0deg)}
 }
-
 .my-img-container {
     width: 150px;
     height: 150px;
@@ -216,7 +213,6 @@ a {
     width: 400px;
     margin: 20px;
     background-color: white;
-    color: #000834;
     padding: 50px 40px 70px;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
@@ -244,7 +240,7 @@ a {
     width: 100px;
     height: 100px;
     margin: 0 auto 40px;
-    background-color: black;
+    background-color: #1031d5;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -256,38 +252,12 @@ a {
 .box:hover {
     color: aliceblue;
 }
+.box:hover .icon{
+    box-shadow:0 0 0 400px #1031d5;
+}
 .box:hover a{
     bottom: 0;
 }
-.box:nth-child(1) .icon{
-    background-color: red;
-}
-.box:nth-child(1):hover .icon{
-    box-shadow:0 0 0 400px red;
-}
-.box:nth-child(2) .icon{
-    background-color: green;
-}
-.box:nth-child(2):hover .icon{
-    box-shadow:0 0 0 400px green;
-}
-.box:nth-child(3) .icon{
-    background-color: blue;
-}
-.box:nth-child(3):hover .icon{
-    box-shadow:0 0 0 400px blue;
-}
-.box:nth-child(4) .icon{
-    background-color: yellow;
-    color: black;
-}
-.box:nth-child(4):hover .icon{
-    box-shadow:0 0 0 400px yellow;
-}
-.box:nth-child(4):hover {
-    color: black;
-}
-
 
 
 /* projects section */
@@ -430,6 +400,7 @@ a {
     font-size: 1.8rem;
     margin: 10px;
 }
+
 .h-container{
     display: flex;
     flex-direction: row;
@@ -456,9 +427,7 @@ a {
     flex-direction: column;
     width: 600px;
     margin: auto;
-    background-image: url('../images/form.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #6c02a7;
     color: #EEF6F9;
     padding: 50px 50px;
     border-radius: 20px;
@@ -480,7 +449,7 @@ form input{
     padding: 5px;
 }
 .sub {
-    background-color: #0564a3;
+    background-color: #ffffff63;
     cursor: pointer;
     color: white;
     transition: .4s;
@@ -490,7 +459,7 @@ form input{
     border-radius: 15px;
 }
 .sub:hover{
-    background-color: #79797980;
+    background-color: transparent;
 }
 form label {
     width: 100%;
@@ -508,7 +477,7 @@ form textarea{
 }
 /* Footer section */
 footer {
-    background-color: darkblue;
+    background-color: #000068;
     padding: 60px;
     font-family: 'Courgette', cursive;
     font-style: italic;
